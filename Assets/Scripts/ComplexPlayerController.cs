@@ -2,6 +2,7 @@
 /// By: Gavin C
 /// Date: 11/4/2020
 /// Desription: This is the more complex player controller allowing for higher jumps if space is held
+/// Help From: https://www.youtube.com/watch?v=j111eKN8sJw
 ///////////////////////////
 
 using System.Collections;
@@ -9,12 +10,12 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class TestingPlayerController : MonoBehaviour
+public class ComplexPlayerController : MonoBehaviour
 {
     [Tooltip("The horizontal movement speed of the character.")]
     public float MovementSpeed = 5;
     [Tooltip("The force the player will jump with.")]
-    public float JumpForce = 5;
+    public float JumpForce = 10;
     [Tooltip("The child object that is the hitbox for the feet.")]
     public GameObject Feet;
     [Tooltip("The radius around the feet that checks for the ground.")]
@@ -41,7 +42,7 @@ public class TestingPlayerController : MonoBehaviour
         //Changes the players horizontal movement
         RB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * MovementSpeed, RB.velocity.y);
 
-        //Flip character
+        //Flip character when moving
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -55,28 +56,30 @@ public class TestingPlayerController : MonoBehaviour
         //Check if the object is on the ground
         IsGrounded = Physics2D.OverlapCircle(Feet.GetComponent<Transform>().position, CheckRadiusSize, GroundType);
 
-        //Apply velocity if grounded and space down
+        //Apply velocity if grounded and space down, also set up JumpTimer and IsJump
         if (IsGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
-            RB.velocity = Vector2.up * JumpForce;
+            RB.velocity = new Vector2(RB.velocity.x, Vector2.up.y * JumpForce);
             JumpTimeCounter = 0;
             IsJumping = true;
         }
 
         //Let the player keep jumping if they havent let up the space bar
-        if (Input.GetKey(KeyCode.Space) && IsJumping == true && JumpTimeCounter < JumpTime)
-        {
-            RB.velocity = Vector2.up * JumpForce;
-            JumpTimeCounter -= Time.deltaTime;
+        if (Input.GetKey(KeyCode.Space) && IsJumping == true)
+        {   
+            //Lets you keep jumping if time hasn't run out
+            if (JumpTimeCounter < JumpTime)
+            {
+                RB.velocity = new Vector2(RB.velocity.x, Vector2.up.y * JumpForce);
+                JumpTimeCounter += Time.deltaTime;
+            }
+            else
+            {   
+                IsJumping = false;
+            }
         }
 
-        //prevent higher jump when out of jump time
-        if (JumpTime <= JumpTimeCounter)
-        {
-            IsJumping = false;
-        }
-
-        //prevent higher jump when space is stopped pressed
+        //Prevent higher jump when space is stopped being pressed
         if(Input.GetKeyUp(KeyCode.Space))
         {
             IsJumping = false;

@@ -25,7 +25,10 @@ public class ComplexPlayerController : MonoBehaviour
     public LayerMask GroundType;
     [Tooltip("The amount of time you can hold down space to jump higher.")]
     public float JumpTime = 1;
+    [Tooltip("The audio source for the jump sound.")]
+    public AudioClip JumpSound;
     Rigidbody2D RB;
+    AudioSource AS;
     bool IsGrounded;
     bool IsJumping = false;
     float JumpTimeCounter = 0;
@@ -35,6 +38,7 @@ public class ComplexPlayerController : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+        AS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -63,6 +67,10 @@ public class ComplexPlayerController : MonoBehaviour
             RB.velocity = new Vector2(RB.velocity.x, Vector2.up.y * JumpForce);
             JumpTimeCounter = 0;
             IsJumping = true;
+
+            //Play jump sound
+            AS.clip = JumpSound;
+            AS.Play();
         }
 
         //Let the player keep jumping if they havent let up the space bar

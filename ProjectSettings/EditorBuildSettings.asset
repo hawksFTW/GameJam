@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GavinScene.unity
+    guid: 1211b79792508784fb39870a285fead6
+  - enabled: 1
+    path: Assets/Scenes/GavinScene2.unity
+    guid: 076ee336ac2befc4ba2bc06bf909fd05
   m_configObjects: {}

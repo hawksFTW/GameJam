@@ -424,7 +424,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3878b4ba6c8bf30408207b36ee90fcb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2e8933b1b6219d4fa1ff3f9d8de7f0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2016590998}
-        m_MethodName: changeScene
+        m_MethodName: ResetTheScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

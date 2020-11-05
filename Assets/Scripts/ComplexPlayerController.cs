@@ -29,6 +29,7 @@ public class ComplexPlayerController : MonoBehaviour
     public AudioClip JumpSound;
     Rigidbody2D RB;
     AudioSource AS;
+    int Dirrection = 0;
     bool IsGrounded;
     bool IsJumping = false;
     float JumpTimeCounter = 0;
@@ -43,16 +44,31 @@ public class ComplexPlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        //Figure out the dirrection
+        if(Input.GetKeyDown("a"))
+        {
+            Dirrection = -1;
+        }
+        if(Input.GetKeyDown("d"))
+        {
+            Dirrection = 1;
+        }
+        if(Input.GetKey("d") == false && Input.GetKey("a") == false)
+        {
+            Dirrection = 0;
+        }
+
+
         //Changes the players horizontal movement
-        RB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * MovementSpeed, RB.velocity.y);
+        RB.velocity = new Vector2(Dirrection * MovementSpeed, RB.velocity.y);
 
         //Flip character when moving
-        if (Input.GetAxisRaw("Horizontal") > 0)
+        if (Dirrection > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if (Input.GetAxisRaw("Horizontal") < 0)
+        else if (Dirrection < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }

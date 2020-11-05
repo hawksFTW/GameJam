@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimeTravelScript : MonoBehaviour
 {
-
+    [Tooltip("How Far the player is teleported in x y and z")]
     public Vector3 offset = Vector3.zero;
 
 
@@ -30,15 +30,18 @@ public class TimeTravelScript : MonoBehaviour
                 if(Present == true)
                 {
                     transform.position += offset;
+                    Camera.main.transform.position += offset;
                     Present = false;
                 }
                 else if(Present == false)
                 {
                     transform.position -= offset;
+                    Camera.main.transform.position -= offset;
                     Present = true;
                 }
-                Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
-                
+                //this will telleport the camera to the players position even if it isnt currently on the players position.
+                //Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
+
             }
         }
         else

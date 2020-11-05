@@ -1,7 +1,7 @@
 ﻿////////////////////////////
 /// By: Gavin C
 /// Date: 11/4/2020
-/// Desription: This is the more complex player controller allowing for higher jumps if space is held
+/// Desription: This is the more complex player controller allowing for higher jumps if space is held, you need to add an object that is the feet of the player, you also need to add an audio source
 /// Help From: https://www.youtube.com/watch?v=j111eKN8sJw
 ///////////////////////////
 
@@ -25,7 +25,7 @@ public class ComplexPlayerController : MonoBehaviour
     public LayerMask GroundType;
     [Tooltip("The amount of time you can hold down space to jump higher.")]
     public float JumpTime = 1;
-    [Tooltip("The audio source for the jump sound.")]
+    [Tooltip("The audio clip for the jump sound.")]
     public AudioClip JumpSound;
     Rigidbody2D RB;
     AudioSource AS;

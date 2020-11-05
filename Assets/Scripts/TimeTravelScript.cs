@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿////////////////////////////
+/// By: Nathan
+/// Date: 11/4/2020
+/// Desription: This is script teleports the player and camera some distance away 
+///////////////////////////
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +12,10 @@ public class TimeTravelScript : MonoBehaviour
 {
     [Tooltip("How Far the player is teleported in x y and z")]
     public Vector3 offset = Vector3.zero;
-
+    [Tooltip("Time travel sound clip.")]
+    public AudioClip TimeTravelSound;
 
     private bool Pressed = false;
-
     private bool Present = true;
 
 
@@ -42,6 +48,9 @@ public class TimeTravelScript : MonoBehaviour
                 //this will telleport the camera to the players position even if it isnt currently on the players position.
                 //Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
 
+                //Play the sound
+                GetComponent<AudioSource>().clip = TimeTravelSound;
+                GetComponent<AudioSource>().Play();
             }
         }
         else

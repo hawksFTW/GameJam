@@ -25,10 +25,10 @@ public class ComplexPlayerController : MonoBehaviour
     public LayerMask GroundType;
     [Tooltip("The amount of time you can hold down space to jump higher.")]
     public float JumpTime = 1;
-    [Tooltip("The audio clip for the jump sound.")]
-    public AudioClip JumpSound;
+    [Tooltip("The GameObject to summon that plays the jump sound.")]
+    public GameObject JumpSound;
     Rigidbody2D RB;
-    AudioSource AS;
+    int Dirrection = 0;
     bool IsGrounded;
     bool IsJumping = false;
     float JumpTimeCounter = 0;
@@ -38,21 +38,35 @@ public class ComplexPlayerController : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-        AS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        //Figure out the dirrection
+        if(Input.GetKeyDown("a"))
+        {
+            Dirrection = -1;
+        }
+        if(Input.GetKeyDown("d"))
+        {
+            Dirrection = 1;
+        }
+        if(Input.GetKey("d") == false && Input.GetKey("a") == false)
+        {
+            Dirrection = 0;
+        }
+
+
         //Changes the players horizontal movement
-        RB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * MovementSpeed, RB.velocity.y);
+        RB.velocity = new Vector2(Dirrection * MovementSpeed, RB.velocity.y);
 
         //Flip character when moving
-        if (Input.GetAxisRaw("Horizontal") > 0)
+        if (Dirrection > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if (Input.GetAxisRaw("Horizontal") < 0)
+        else if (Dirrection < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
@@ -68,9 +82,8 @@ public class ComplexPlayerController : MonoBehaviour
             JumpTimeCounter = 0;
             IsJumping = true;
 
-            //Play jump sound
-            AS.clip = JumpSound;
-            AS.Play();
+            //Summon jump sound player
+            Instantiate<GameObject>(JumpSound, transform.position, transform.rotation);
         }
 
         //Let the player keep jumping if they havent let up the space bar

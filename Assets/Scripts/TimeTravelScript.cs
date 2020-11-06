@@ -1,7 +1,7 @@
 ﻿////////////////////////////
 /// By: Nathan
 /// Date: 11/4/2020
-/// Desription: This is script teleports the player and camera some distance away 
+/// Desription: This is script teleports the player and camera some distance away, "could" be accessed though another object
 ///////////////////////////
 
 using System.Collections;
@@ -20,13 +20,13 @@ public class TimeTravelScript : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-
+        TimeTravel();
     }
 
     // Update is called once per frame
-    void Update()
+    public void TimeTravel()
     {
         if(Input.GetAxisRaw("Fire1") > 0)
         {

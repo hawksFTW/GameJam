@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿///
+///By: Dhruv 
+///Date: 11/4/2020
+///Desc: Script to play sound
+///
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +20,7 @@ public class AudioScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             audiosource.PlayOneShot(impact, 0.7f);
         }

@@ -1135,7 +1135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 274435231}
+  OffSet: {x: 0, y: 0}
   Smoothing: 0.25
+  CameraStartOn: 1
 --- !u!1 &1258431508
 GameObject:
   m_ObjectHideFlags: 0

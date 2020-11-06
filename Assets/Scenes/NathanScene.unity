@@ -600,7 +600,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   JumpTime: 0.25
-  JumpSound: {fileID: 8300000, guid: 8ae7cee63f211d94ba164d29e9b24a95, type: 3}
+  JumpSound: {fileID: 3504522064243142440, guid: 11740ea8b28932e4db6f92dbae9f7dd7,
+    type: 3}
 --- !u!212 &274435235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -679,6 +680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 4, y: 0, z: 0}
+  TimeTravelSound: {fileID: 325374145542381970, guid: d134fc4140a53f145bb2a0cd822e7d01,
+    type: 3}
 --- !u!82 &274435238
 AudioSource:
   m_ObjectHideFlags: 0

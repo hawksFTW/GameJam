@@ -28,7 +28,7 @@ public class TimeTravelScript : MonoBehaviour
     // Update is called once per frame
     public void TimeTravel()
     {
-        if(Input.GetAxisRaw("Fire1") > 0)
+        if(Input.GetAxisRaw("e") > 0)
         {
             if(Pressed == false)
             {

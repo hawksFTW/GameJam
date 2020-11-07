@@ -279,7 +279,7 @@ PrefabInstance:
     - target: {fileID: 4461265549369277595, guid: 0fe94c5c7b1897d439220740243c6f81,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461265549369277595, guid: 0fe94c5c7b1897d439220740243c6f81,
         type: 3}
@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 4461265549369277598, guid: 0fe94c5c7b1897d439220740243c6f81,
         type: 3}
       propertyPath: SceneName
-      value: Level6
+      value: End
       objectReference: {fileID: 0}
     - target: {fileID: 4461265549369277599, guid: 0fe94c5c7b1897d439220740243c6f81,
         type: 3}

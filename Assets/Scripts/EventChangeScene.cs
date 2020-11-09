@@ -1,7 +1,7 @@
 ﻿////////////////////////////
 /// By: Gavin C
 /// Date: 11/6/2020
-/// Desription: This is a script to be accused via unity events to change the scene
+/// Desription: This is a script to be access via unity events to change the scene
 ///////////////////////////
 
 using System.Collections;

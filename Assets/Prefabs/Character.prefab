@@ -149,7 +149,7 @@ MonoBehaviour:
   MovementSpeed: 5
   JumpForce: 10
   Feet: {fileID: 5192676321900265133}
-  CheckRadiusSize: 0.3
+  CheckRadiusSize: 0.4
   GroundType:
     serializedVersion: 2
     m_Bits: 256

@@ -17,7 +17,7 @@ public class OnCollideEvent : MonoBehaviour
     //on collide with something other than the ground, invoke all events
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Transform>().tag != "Ground")
+        if (other.GetComponent<Transform>().tag != "Environment")
         {
             OnCollide.Invoke();
         }

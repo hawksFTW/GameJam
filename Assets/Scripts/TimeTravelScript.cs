@@ -1,7 +1,7 @@
 ﻿////////////////////////////
 /// By: Nathan
 /// Date: 11/4/2020
-/// Desription: This is script teleports the player and camera some distance away, "could" be accessed though another object
+/// Desription: This is script teleports the player and camera some distance away, also can be accessed though events
 ///////////////////////////
 
 using System.Collections;
@@ -22,40 +22,41 @@ public class TimeTravelScript : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        TimeTravel();
-    }
-
-    // Update is called once per frame
-    public void TimeTravel()
-    {
-        if(Input.GetAxisRaw("Fire1") > 0)
+        if (Input.GetKeyDown("e") == true)
         {
-            if(Pressed == false)
-            {
-                Pressed = true;
-                if(Present == true)
-                {
-                    transform.position += offset;
-                    Camera.main.transform.position += offset;
-                    Present = false;
-                }
-                else if(Present == false)
-                {
-                    transform.position -= offset;
-                    Camera.main.transform.position -= offset;
-                    Present = true;
-                }
-
-                //this will telleport the camera to the players position even if it isnt currently on the players position.
-                //Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
-
-                //Summon time travel sound player
-                Instantiate<GameObject>(TimeTravelSound, transform.position, transform.rotation);
-            }
+            TimeTravel();
         }
         else
         {
             Pressed = false;
         }
+    }
+
+    // Update is called once per frame
+    public void TimeTravel()
+    {
+        if (Pressed == false)
+        {
+            Pressed = true;
+            if (Present == true)
+            {
+                transform.position += offset;
+                Camera.main.transform.position += offset;
+                Present = false;
+            }
+            else if (Present == false)
+            {
+                transform.position -= offset;
+                Camera.main.transform.position -= offset;
+                Present = true;
+            }
+
+            //this will telleport the camera to the players position even if it isnt currently on the players position.
+            //Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
+
+            //Summon time travel sound player
+            Instantiate<GameObject>(TimeTravelSound, transform.position, transform.rotation);
+        }
+
     }
 }

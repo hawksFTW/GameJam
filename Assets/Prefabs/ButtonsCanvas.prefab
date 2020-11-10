@@ -348,7 +348,7 @@ Canvas:
   m_GameObject: {fileID: 3407152066962378517}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 3407152067831773204}
   - component: {fileID: 3407152067831773672}
   - component: {fileID: 3407152067831773207}
-  - component: {fileID: 3407152067831773206}
+  - component: {fileID: 6684215932425573783}
   m_Layer: 5
   m_Name: TimeTravel
   m_TagString: Untagged
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3407152067831773206
+--- !u!114 &6684215932425573783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -518,7 +518,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5192676320679812392, guid: 1c794dc007e6057448d9933a07954b2b,
+          type: 3}
         m_MethodName: TimeTravel
         m_Mode: 1
         m_Arguments:

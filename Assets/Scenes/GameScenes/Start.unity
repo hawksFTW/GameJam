@@ -1606,7 +1606,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NAME OF GAME
+  m_Text: Castle of Time
 --- !u!222 &1360279124
 CanvasRenderer:
   m_ObjectHideFlags: 0

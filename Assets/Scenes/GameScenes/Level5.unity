@@ -188,6 +188,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &37262182 stripped
@@ -927,6 +933,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &324620826 stripped
@@ -1520,6 +1532,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418378325}
     m_Modifications:
+    - target: {fileID: 5185873903806006016, guid: 62e031e0b119e1843a9aefa04b0aed74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a877ac92f2f32b44aaad48bbad568f4f,
+        type: 3}
     - target: {fileID: 5185873903806006018, guid: 62e031e0b119e1843a9aefa04b0aed74,
         type: 3}
       propertyPath: m_Name
@@ -1760,6 +1778,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418378325}
     m_Modifications:
+    - target: {fileID: 5185873903806006016, guid: 62e031e0b119e1843a9aefa04b0aed74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a877ac92f2f32b44aaad48bbad568f4f,
+        type: 3}
     - target: {fileID: 5185873903806006018, guid: 62e031e0b119e1843a9aefa04b0aed74,
         type: 3}
       propertyPath: m_Name
@@ -2028,6 +2052,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418378325}
     m_Modifications:
+    - target: {fileID: 5185873903806006016, guid: 62e031e0b119e1843a9aefa04b0aed74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a877ac92f2f32b44aaad48bbad568f4f,
+        type: 3}
     - target: {fileID: 5185873903806006018, guid: 62e031e0b119e1843a9aefa04b0aed74,
         type: 3}
       propertyPath: m_Name
@@ -2163,6 +2193,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &882804123 stripped
@@ -2259,6 +2295,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418378325}
     m_Modifications:
+    - target: {fileID: 5185873903806006016, guid: 62e031e0b119e1843a9aefa04b0aed74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a877ac92f2f32b44aaad48bbad568f4f,
+        type: 3}
     - target: {fileID: 5185873903806006018, guid: 62e031e0b119e1843a9aefa04b0aed74,
         type: 3}
       propertyPath: m_Name
@@ -2703,6 +2745,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418378325}
     m_Modifications:
+    - target: {fileID: 5185873903806006016, guid: 62e031e0b119e1843a9aefa04b0aed74,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a877ac92f2f32b44aaad48bbad568f4f,
+        type: 3}
     - target: {fileID: 5185873903806006018, guid: 62e031e0b119e1843a9aefa04b0aed74,
         type: 3}
       propertyPath: m_Name
@@ -2913,6 +2961,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &1441837242 stripped
@@ -3179,6 +3233,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &1614138979 stripped
@@ -3896,6 +3956,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6849364532842766143, guid: 042f0d3938607cd4ab0713762cb2c666,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e46f3711e5bae58499cf9578f714c3f3,
+        type: 3}
     - target: {fileID: 7766538857954268029, guid: 042f0d3938607cd4ab0713762cb2c666,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3977,6 +4043,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 6849364532842766143, guid: 042f0d3938607cd4ab0713762cb2c666,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e46f3711e5bae58499cf9578f714c3f3,
+        type: 3}
     - target: {fileID: 7766538857954268029, guid: 042f0d3938607cd4ab0713762cb2c666,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4188,6 +4260,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6902523831688044980, guid: 6a1f51d23af5e8741bc39f286c377e3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be20ec24964af924698947a33143cc13,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1f51d23af5e8741bc39f286c377e3a, type: 3}
 --- !u!4 &2074910959 stripped
@@ -4208,6 +4286,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6849364532842766143, guid: 042f0d3938607cd4ab0713762cb2c666,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e46f3711e5bae58499cf9578f714c3f3,
+        type: 3}
     - target: {fileID: 7766538857954268029, guid: 042f0d3938607cd4ab0713762cb2c666,
         type: 3}
       propertyPath: m_LocalPosition.x

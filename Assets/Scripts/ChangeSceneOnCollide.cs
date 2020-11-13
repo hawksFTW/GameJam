@@ -29,7 +29,7 @@ public class ChangeSceneOnCollide : MonoBehaviour
         }
     }
 
-    //enumerator change scene after some time
+    //enumerator change scene after some amount of time
     IEnumerator ChangeScene()
     {
         yield return (new WaitForSeconds(Time));

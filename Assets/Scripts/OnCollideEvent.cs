@@ -14,7 +14,7 @@ public class OnCollideEvent : MonoBehaviour
     [Tooltip("Events to be run when object collides.")]
     public UnityEvent OnCollide;
 
-    //on collide with something other than the ground, invoke all events
+    //on collide with something other than the environment, invoke all events
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Transform>().tag != "Environment")

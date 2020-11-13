@@ -37,13 +37,14 @@ public class ComplexPlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //set up rigidbody 
         RB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {   
-        //Figure out the dirrection
+        //Figure out the dirrection player is moving
         if(Input.GetKeyDown("a"))
         {
             Dirrection = -1;
@@ -61,7 +62,7 @@ public class ComplexPlayerController : MonoBehaviour
         //Changes the players horizontal movement
         RB.velocity = new Vector2(Dirrection * MovementSpeed, RB.velocity.y);
 
-        //Flip character when moving
+        //Flip character horizontally when moving
         if (Dirrection > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);

@@ -47,17 +47,17 @@ public class AnimationPlayerController : MonoBehaviour
         if (Input.GetKeyDown("a"))
         {
             Dirrection = -1;
-            GetComponent<Animation>().enabled = true;
+            GetComponent<AnimationScript>().enabled = true;
         }
         if (Input.GetKeyDown("d"))
         {
-            GetComponent<Animation>().enabled = true;
+            GetComponent<AnimationScript>().enabled = true;
             Dirrection = 1;
         }
         if (Input.GetKey("d") == false && Input.GetKey("a") == false)
         {
             this.GetComponent<SpriteRenderer>().sprite = main;
-            GetComponent<Animation>().enabled = false;
+            GetComponent<AnimationScript>().enabled = false;
             Dirrection = 0;
         }
 

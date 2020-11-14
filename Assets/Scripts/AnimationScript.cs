@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animation : MonoBehaviour
+public class AnimationScript : MonoBehaviour
 {   
     [Tooltip("List of sprites in the animation.")]
     public Sprite[] list;

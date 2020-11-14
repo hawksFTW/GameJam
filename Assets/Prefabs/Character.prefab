@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5192676320679812396}
   - component: {fileID: 5192676320679812307}
   - component: {fileID: 5192676320679812306}
-  - component: {fileID: 5192676320679812398}
   - component: {fileID: 5192676320679812392}
   m_Layer: 0
   m_Name: Character
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5192676320679812305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.87, y: -3.58, z: 0}
+  m_LocalPosition: {x: 44.87, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5192676321900265134}
@@ -133,28 +132,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5192676320679812398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5192676320679812305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414319d60e0d997449866aad055e4488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementSpeed: 5
-  JumpForce: 10
-  Feet: {fileID: 5192676321900265133}
-  CheckRadiusSize: 0.3
-  GroundType:
-    serializedVersion: 2
-    m_Bits: 256
-  JumpTime: 0.3
-  JumpSound: {fileID: 3504522064243142440, guid: 11740ea8b28932e4db6f92dbae9f7dd7,
-    type: 3}
 --- !u!114 &5192676320679812392
 MonoBehaviour:
   m_ObjectHideFlags: 0

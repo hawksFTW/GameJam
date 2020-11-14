@@ -1,8 +1,16 @@
-﻿using System.Collections;
+﻿////////////////////////////
+/// Main by: Gavin C
+/// Animation by: Riley Mitchell
+/// Date: 11/4/2020
+/// Desription: This is the more complex player controller allowing for higher jumps if space is held, you need to add an object that is the feet of the player, uses animation script
+/// Help From: https://www.youtube.com/watch?v=j111eKN8sJw
+///////////////////////////
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerCon2 : MonoBehaviour
+public class AnimationPlayerController : MonoBehaviour
 {
     [Tooltip("The horizontal movement speed of the character.")]
     public float MovementSpeed = 5;
@@ -35,21 +43,21 @@ public class playerCon2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Figure out the dirrection
+        //Figure out the dirrection and start/stop animation
         if (Input.GetKeyDown("a"))
         {
             Dirrection = -1;
-            GetComponent<animation>().enabled = true;
+            GetComponent<Animation>().enabled = true;
         }
         if (Input.GetKeyDown("d"))
         {
-            GetComponent<animation>().enabled = true;
+            GetComponent<Animation>().enabled = true;
             Dirrection = 1;
         }
         if (Input.GetKey("d") == false && Input.GetKey("a") == false)
         {
             this.GetComponent<SpriteRenderer>().sprite = main;
-            GetComponent<animation>().enabled = false;
+            GetComponent<Animation>().enabled = false;
             Dirrection = 0;
         }
 

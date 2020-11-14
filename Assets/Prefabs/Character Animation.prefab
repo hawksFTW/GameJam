@@ -18,9 +18,10 @@ MonoBehaviour:
   CheckRadiusSize: 0.3
   GroundType:
     serializedVersion: 2
-    m_Bits: 0
-  JumpTime: 1
-  JumpSound: {fileID: 0}
+    m_Bits: 256
+  JumpTime: 0.3
+  JumpSound: {fileID: 3504522064243142440, guid: 11740ea8b28932e4db6f92dbae9f7dd7,
+    type: 3}
   main: {fileID: 21300000, guid: d0ec979d1688f2a45afe0424a40d94ff, type: 3}
 --- !u!114 &7529918838889379875
 MonoBehaviour:
@@ -57,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 5192676320679812305, guid: 1c794dc007e6057448d9933a07954b2b,
         type: 3}
       propertyPath: m_Name
-      value: Character (1) Variant
+      value: Character Animation
       objectReference: {fileID: 0}
     - target: {fileID: 5192676320679812397, guid: 1c794dc007e6057448d9933a07954b2b,
         type: 3}

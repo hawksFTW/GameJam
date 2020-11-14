@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-////////////////////////////
+﻿////////////////////////////
 /// By: Riley mitchell
 /// Date: 11/12/2020
 /// Desription: animator script that moves through the frames chosen in the editor at a chosen pase
 ///////////////////////////
-public class animation : MonoBehaviour
-{
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Animation : MonoBehaviour
+{   
+    [Tooltip("List of sprites in the animation.")]
     public Sprite[] list;
-    public float speed = 0;
+    [Tooltip("Transition speed of the animation.")]
+    public float speed = 0.05f;
     int size;
-    public float timer = 0f;
+    float timer = 0f;
     SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
